@@ -17,6 +17,7 @@ export struct TransformComponent
 export template <typename T>
 concept ValidComponent = !std::is_integral_v<T> && !std::is_array_v<T>;
 
+//TODO this gets instantiated in the header/TU that imports the module
 template <ValidComponent T>
 SlabAllocator<T>* COMPONENT_ALLOCATOR = nullptr;
 

@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+.idea/
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+cmake-build-debug-profiling/
